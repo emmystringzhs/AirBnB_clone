@@ -1,7 +1,8 @@
 import cmd
 
+
 class AirBnBCLI(cmd.Cmd):
-    prompt = 'AirBnB> '
+    prompt = "AirBnB> "
 
     def do_list_properties(self, args):
         """List all available properties"""
@@ -18,6 +19,7 @@ class AirBnBCLI(cmd.Cmd):
         print("Exiting...")
         return True
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     cli = AirBnBCLI()
     cli.cmdloop("Welcome to the AirBnB clone project!")
